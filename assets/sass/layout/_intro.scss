@@ -1,0 +1,36 @@
+
+
+/* Intro */
+
+	#intro {
+		background-attachment: fixed;
+		background-image: url('images/intro.svg');
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+		h1{
+			text-shadow: 2px 2px 1px rgb(150, 35, 0);
+		}
+		p {
+			font-size: 1.25em; 
+			color: rgba(255, 255, 255, 0.8);
+			vertical-align: top;
+			
+			
+
+			@include breakpoint('<=medium') {
+				br {
+					display: none;
+				}
+			}
+
+			@include breakpoint('<=small') {
+				font-size: 1em;
+			}
+		}
+
+		@include breakpoint('<=large') {
+			background-attachment: scroll;
+		}
+	}

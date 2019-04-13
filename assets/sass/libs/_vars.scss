@@ -1,0 +1,51 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000,
+		max-features:		20,
+		max-sidebar-links:	20
+	);
+
+// Duration.
+	$duration: (
+		transition:			0.2s,
+		activation:			1s 
+	);
+
+// Size.
+	$size: (
+		border-radius:		0.25em,
+		border-width:		1px,
+		element-height:		2.75em,
+		element-margin:		2em,
+		sidebar-width:		12em,
+		sidebar-height:		3.5em,	// when <=large is active
+		inner-width:		75em
+	);
+
+// Font.
+	$font: (
+		family:				(Arial, Helvetica, sans-serif),
+		family-fixed:		('Courier New', monospace),
+		weight:				normal,
+		weight-bold:		bold,
+		kerning-alt:		0.25em
+	);
+
+// Palette.
+	$palette: (
+		bg:					#262f31, 
+		bg-alt:			rgb(102, 102, 102),
+		fg:					rgba(43, 43, 43, 0.8),
+		fg-bold:			darken(#C0B283, 10),//rgb(248, 178, 26),
+		fg-light:			rgba(255,255,255,0.35),
+		border:				#dcd0c0,
+		border-bg:			rgba(255,255,255,0.05),
+		accent1:			#474B4F,//rgb(68, 93, 133), 
+		accent1-alt:		darken(rgb(206, 198, 194), 10),
+		accent2:			#474B4F,//#C5C6C7, 
+		accent2-alt:		darken(rgb(41, 20, 20), 10),
+		accent3:		  rgba(252, 252, 252, 1), 
+		accent3-alt:		darken(#b74e91, 10)
+	);
+
+
