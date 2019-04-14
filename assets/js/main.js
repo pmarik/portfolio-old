@@ -1,8 +1,4 @@
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 (function($) {
 
@@ -164,6 +160,13 @@
 
 				// Hide <img>.
 					$img.hide();
+
+				//Add blur on hover
+					$image.hover(function(){
+						$image.css('background-image', 'url(' + $img.attr('data-bckgrnd') + ')');
+					}, function(){
+						$image.css('background-image', 'url(' + $img.attr('src') + ')');
+					})
 
 			});
 

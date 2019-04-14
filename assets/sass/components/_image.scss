@@ -7,9 +7,7 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-		border-style: solid;
-		border-width: 1px;
-		border-color: black;
+		
 		
 		
 		
@@ -20,13 +18,17 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			color: white;
-			text-shadow: 2px 2px 2px #C0B283;
+			background-color: #474b4f;
+			text-shadow: 1px 1px 2px #C0B283;
 			border-style: solid;
 			border-width:2px;
-			font-size: 1.8em;
-			width: 7em;
+			border-radius: 3em;
+			font-size: 1em;
+			width: 10em;
 			text-align: center;
 			display: none;
+			padding: 10px 20px 10px 20px;
+			
 		}
 
 		&:hover{
