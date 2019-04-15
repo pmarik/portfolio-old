@@ -12,6 +12,14 @@
 		h1{
 			text-shadow: 2px 2px 1px rgb(150, 35, 0);
 		}
+
+		@include breakpoint('<=small'){
+			h2{
+				margin-top: 33px;
+		
+			}
+		}
+		
 		p {
 			font-size: 1.25em; 
 			color: rgba(255, 255, 255, 0.8);
@@ -33,4 +41,9 @@
 		@include breakpoint('<=large') {
 			background-attachment: scroll;
 		}
+	}
+
+	.nxt:hover::before{
+		content: "►  ";
+		color: #C0B283;
 	}

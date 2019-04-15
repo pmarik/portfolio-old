@@ -190,4 +190,31 @@
 				}
 			});
 
+
+	//Page Transitions
+
+	$(".trans").on("click", function(e){
+		e.preventDefault();
+
+		const href = $(this).attr("href");
+
+		window.history.pushState (null, null, href);
+
+		$.ajax({
+			url: href, 
+			success: function (data) {
+				$(".transwap").fadeOut(350, function() {
+					const newPage = $(data).filter(".transwap").html();
+
+					$(".transwap").html(newPage);
+					$(this).scrollTop(0);
+					$(".transwap").fadeIn(350);
+				})
+			}
+		});
+	});
+
+
+
+
 })(jQuery);

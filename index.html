@@ -23,13 +23,20 @@
     <meta property="og:description" content="Web Development and Marketing Solutions">
     <meta property="og:image" content="./images/thumbnailHome.JPG">
     <meta property="og:url" content="https://practical-meninsky-cd12df.netlify.com">
-    
+
+    <!-- asset preload -->
+	<link rel="preload" href="images/unaffiliatedHomeBlur.jpg">
+	<link rel="preload" href="images/daymakerHomeBlur.jpg">
+    <link rel="prefetch" href="/images/unaffiliatedTemplate.png">
+    <link rel="prefetch" href="/images/daymakerTemplate.png">
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
 <body class="is-preload">
+    <div class="transwap">
+        
 
     <!-- Sidebar -->
     <section id="sidebar">
@@ -108,22 +115,22 @@
                         <h2 class="swing">Unaffiliated Productions</h2>
                         <p>Live production site built from scratch. Developed with speed, accessibility, and SEO in mind to drive views and establish credibility...</p>
                         <ul class="actions">
-                            <li><a href="./case_one.html" class="button">View full case</a></li>
+                            <li><a href="/case_one.html" class="button trans">View full case</a></li>
                         </ul>
                     </div>
                 </div>
-                <a href="./case_one.html" class="image"><img src="images/unaffiliatedHome.JPG" alt="Unaffiliated Productions Website Preview"  data-position="center left" data-bckgrnd="images/unaffiliatedHomeBlur.jpg"/><div class="centered">View Project</div></a>
+                <a href="./case_one.html" class="image trans"><img src="images/unaffiliatedHome.JPG" alt="Unaffiliated Productions Website Preview"  data-position="center left" data-bckgrnd="images/unaffiliatedHomeBlur.jpg"/><div class="centered">View Project</div></a>
              
 
             </section>
             <section>
-                <a href="./case_two.html" class="image"><img src="images/daymakerHome.JPG" alt="Daymaker Touring Website Preview" data-position="top left" data-bckgrnd="images/daymakerHomeBlur.jpg"  /><div class="centered">View Project</div></a>
+                <a href="./case_two.html" class="image trans"><img src="images/daymakerHome.JPG" alt="Daymaker Touring Website Preview" data-position="top left" data-bckgrnd="images/daymakerHomeBlur.jpg"  /><div class="centered">View Project</div></a>
                 <div class="content">
                     <div class="inner">
                         <h2 class="swing">Daymaker Touring</h2>
                         <p>Frontend consultation to improve site flow and call-to-action to increase conversions... </p>
                         <ul class="actions">
-                            <li><a href="./case_two.html" class="button">View full case</a></li>
+                            <li><a href="./case_two.html" class="button trans">View full case</a></li>
                         </ul>
                     </div> 
                 </div>
@@ -196,7 +203,8 @@
     </div>
 
  
-
+ </div>
+ 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -205,6 +213,13 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
+
+    <!-- <script src="dist/swup.min.js"></script> -->
+    <!-- <script src="dist/bundle.js"></script> -->
+
+
+  
 
 </body>
 
