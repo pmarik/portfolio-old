@@ -24,11 +24,11 @@
     <meta property="og:image" content="./images/thumbnailHome.JPG">
     <meta property="og:url" content="https://practical-meninsky-cd12df.netlify.com">
 
-    <!-- asset preload -->
-	<link rel="preload" href="images/unaffiliatedHomeBlur.jpg">
-	<link rel="preload" href="images/daymakerHomeBlur.jpg">
-    <link rel="prefetch" href="/images/unaffiliatedTemplate.png">
-    <link rel="prefetch" href="/images/daymakerTemplate.png">
+    <!-- asset prefetch -->
+	<link rel="prefetch" href="images/unaffiliatedHomeBlur.jpg" as="image">
+	<link rel="prefetch" href="images/daymakerHomeBlur.jpg" as="image">
+    <link rel="prefetch" href="/images/unaffiliatedTemplate.png" as="image">
+    <link rel="prefetch" href="/images/daymakerTemplate.png" as="image">
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -213,10 +213,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
-
-    <!-- <script src="dist/swup.min.js"></script> -->
-    <!-- <script src="dist/bundle.js"></script> -->
+    <script src="dist/bundle.js"></script> 
 
 
   
