@@ -148,6 +148,10 @@
         }
     }
     @include breakpoint('<=small') {
-        display: none;
+        //display: none;
+    }
+    @include breakpoint('<=xsmall') {
+        //display: none;
+        
     }
 }

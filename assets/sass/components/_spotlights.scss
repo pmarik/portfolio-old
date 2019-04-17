@@ -98,6 +98,22 @@
 			@include breakpoint('<=medium') {
 				display: block;
 
+				.sectionimg{
+					margin: 0 auto;
+					max-width: 95%;
+					height: 50vh;
+					padding: 10px 10px;
+					a{
+						
+
+						
+						img{
+							width: 100%;
+						}
+					}	
+				}
+
+
 				> .image {
 					width: 100%;
 					height: 50vh;
