@@ -1738,9 +1738,8 @@ input[type="radio"] + label:before {
     transform: translate(-50%, -50%);
     color: white;
     background-color: #474b4f;
-    text-shadow: 1px 1px 2px #C0B283;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 3em;
     font-size: 1em;
     width: 10em;
@@ -2745,9 +2744,32 @@ table {
   content: "►  ";
   color: #C0B283; }
 
+.title.case-shadow:hover, .title.case-shadow:active {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
+
 @media only screen and (min-width: 1000px) {
   #three {
     height: 100vh; } }
+
+#loaddiv {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .title.case-shadow:hover {
   opacity: 0.8; }

@@ -16,7 +16,7 @@
 		@include breakpoint('<=small'){
 			h2{
 				margin-top: 33px;
-		
+				
 			}
 		}
 		
@@ -43,7 +43,16 @@
 		}
 	}
 
-	.nxt:hover::before{
-		content: "►  ";
-		color: #C0B283;
+	.nxt:hover{
+		
+		
+		&::before{
+			content: "►  ";
+			color: #C0B283;
+		}
 	}
+
+	.title.case-shadow:hover, .title.case-shadow:active{
+		transform: scale(1.05);
+	}
+	
