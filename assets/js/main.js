@@ -47,10 +47,10 @@
 
 			$sidebar_a
 				.addClass('scrolly')
-				.on('click', function() {
+				.on('click', function(e) {
 
 					var $this = $(this);
-
+					
 					// External link? Bail.
 						if ($this.attr('href').charAt(0) != '#')
 							return;
@@ -63,6 +63,13 @@
 							.addClass('active')
 							.addClass('active-locked');
 
+
+					// //try to add anchor class for top nav offset
+					console.log(e.target + "e.target boi");
+
+					
+						
+
 				})
 				.each(function() {
 
@@ -70,6 +77,9 @@
 						id = $this.attr('href'),
 						$section = $(id);
 
+
+			
+						
 					// No section for this link? Bail.
 						if ($section.length < 1)
 							return;
@@ -190,7 +200,11 @@
 				}
 			});
 
-
+			// if ($window.width() < 481 ){
+			// 	var offset = $(':target').offset();
+			// 	var scrollto = offset.top - 200; // minus fixed header height
+			// 	$('html, body').animate({scrollTop:scrollto}, 0);
+			// }
 
 
 

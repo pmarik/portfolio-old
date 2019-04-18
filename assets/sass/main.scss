@@ -54,6 +54,40 @@
 
 
 
+@include breakpoint('<=small') {
+    #intro{
+        z-index: 100;
+    }
+    #two{
+        z-index: 90
+    }
+    #one{
+        z-index: 80
+    }
+    #three{
+        z-index: 70;
+    }
+    .jumptarget::before {
+        content:"";
+        opacity: 0;
+        display:block;
+        height:25px; /* fixed header height*/
+        margin:-25px 0 0; /* negative fixed header height */
+        visibility: hidden;
+      }
+    //display: none;
+    // .anchor{
+    //     display: block;
+    //     position: relative;
+    //     top: -3em;
+    //     visibility: hidden;
+    // }
+}
+@include breakpoint('<=xsmall') {
+    //display: none;
+    
+}
+
 @media only screen and (min-width: 1000px){
 	#three{
         height: 100vh;

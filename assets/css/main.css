@@ -2811,6 +2811,25 @@ table {
   -ms-transform: scale(1.05);
   transform: scale(1.05); }
 
+@media screen and (max-width: 736px) {
+  #intro {
+    z-index: 100; }
+  #two {
+    z-index: 90; }
+  #one {
+    z-index: 80; }
+  #three {
+    z-index: 70; }
+  .jumptarget::before {
+    content: "";
+    opacity: 0;
+    display: block;
+    height: 25px;
+    /* fixed header height*/
+    margin: -25px 0 0;
+    /* negative fixed header height */
+    visibility: hidden; } }
+
 @media only screen and (min-width: 1000px) {
   #three {
     height: 100vh; } }
