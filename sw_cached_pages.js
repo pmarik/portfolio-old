@@ -17,12 +17,13 @@ const cacheAssets = [
     'assets/css/noscript.css',
     'assets/css/font-awesome.min.css',
     'images/daymakerHome.JPG',
-    'images/daymakerHomeBlur.jpg',
     'images/daymakerTemplate.png',
     'images/unaffiliatedHome.JPG',
-    'images/unaffiliatedHomeBlur.jpg',
     'images/unaffiliatedTemplate.png',
-    'images/marik.tech_logo.png'
+    'images/marik.tech_logo.png',
+    'assets/css/images/intro.svg',
+    'images/favicon.ico',
+    'images/m-loader-opt.gif'
 ];
 
 // Call Install Event
