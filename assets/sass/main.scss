@@ -75,9 +75,26 @@
         margin:-25px 0 0; /* negative fixed header height */
         visibility: hidden;
       }
+
+    img#loader{
+        height: 45px !important;
+    }
     
 }
 
+
+        .img-txt-swap{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            h2{
+                padding: 0 30px 0 0;
+            }
+            img{
+                position: relative;
+                bottom: 8px;
+            }
+        }
 
 @media only screen and (min-width: 1000px){
 	#three{
@@ -87,6 +104,10 @@
 	
 	
 } 
+
+img#loader{
+    height: 65px;
+}
 
 #loaddiv{
     position: fixed;
@@ -115,7 +136,53 @@ opacity: 0.8;
     position: relative;
     left: 10px;
     bottom: 10px;
+   
 } 
+
+@include breakpoint('>xlarge'){
+    .m-logo{
+        top: 4px;
+    }
+}
+
+@include breakpoint('<xlarge'){
+    .m-logo{
+        bottom: 15px;
+    }
+}
+
+@include breakpoint('<large'){
+    .m-logo{
+        bottom: 30px;
+    }
+}
+
+@include breakpoint('<=medium'){
+    .m-logo{
+        bottom: 15px;
+    }
+    #one{
+        section:nth-of-type(2){
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@include breakpoint('<=small'){
+    .m-logo{
+        left: 8px;
+        img{
+           width: 80px;
+        }
+    }
+}
+
+@include breakpoint('<xsmall'){
+    .m-logo{
+        bottom: 20px;
+    }
+}
 
 .m-logo-case{
     position: relative;
@@ -139,18 +206,21 @@ opacity: 0.8;
     }
 }
 
-#two{
-    .inner{
-        h2{
-            text-shadow: 1px 1px _palette(bg);
 
-        }
-    }
-}
 
 #three{
     background-color: #f4f4f4;
 	.inner{
+        img{
+            position: relative;
+            bottom: 10px;
+        }
+        h2{
+            float: left;
+            padding: 0 30px 0 0;
+         
+
+        }
         form{
             input, textarea{
                 background-color:rgb(139, 143, 146);
@@ -254,3 +324,4 @@ opacity: 0.8;
         font-weight: bold;
     }
 }
+

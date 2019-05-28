@@ -51,7 +51,7 @@
         a {
             @include vendor('transition', 'color #{_duration(transition)} ease');
             border: 0;
-            color: _palette(fg-light);
+            color:#cabcaa;
             display: block;
             font-size: 0.6em;
             font-weight: _font(weight-bold);
@@ -123,16 +123,19 @@
         nav {
             height: inherit;
             line-height: inherit;
+            width: 85%;
             ul {
                 @include vendor('display', 'flex');
                 height: inherit;
                 line-height: inherit;
                 margin: 0;
+                justify-content: space-evenly;
+               
                 li {
                     display: block;
                     height: inherit;
                     line-height: inherit;
-                    margin: 0 0 0 2em;
+                    margin: 0 0 0 3em;
                     padding: 0;
                 }
             }
@@ -152,6 +155,13 @@
     }
     @include breakpoint('<=xsmall') {
         //display: none;
+       nav{
+           ul{
+               li{
+                   margin: 0 0 0 1em;
+               }
+           }
+       }
         
     }
 }

@@ -1176,7 +1176,9 @@ button,
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap; }
+  white-space: nowrap;
+  -webkit-box-shadow: 1px 2px #262f31;
+  box-shadow: 1px 2px #262f31; }
   input[type="submit"]:after,
   input[type="reset"]:after,
   input[type="button"]:after,
@@ -2417,7 +2419,7 @@ table {
           margin-left: 0; }
         #header > nav > ul > li a {
           border: 0;
-          color: rgba(255, 255, 255, 0.35);
+          color: #cabcaa;
           display: inline-block;
           font-size: 0.6em;
           font-weight: bold;
@@ -2673,7 +2675,7 @@ table {
     -o-transition: color 0.2s ease;
     transition: color 0.2s ease;
     border: 0;
-    color: rgba(255, 255, 255, 0.35);
+    color: #cabcaa;
     display: block;
     font-size: 0.6em;
     font-weight: bold;
@@ -2749,7 +2751,8 @@ table {
         line-height: inherit; }
       #sidebar nav {
         height: inherit;
-        line-height: inherit; }
+        line-height: inherit;
+        width: 85%; }
         #sidebar nav ul {
           display: -moz-flex;
           display: -webkit-flex;
@@ -2759,12 +2762,15 @@ table {
           display: flex;
           height: inherit;
           line-height: inherit;
-          margin: 0; }
+          margin: 0;
+          -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
           #sidebar nav ul li {
             display: block;
             height: inherit;
             line-height: inherit;
-            margin: 0 0 0 2em;
+            margin: 0 0 0 3em;
             padding: 0; }
         #sidebar nav a {
           height: inherit;
@@ -2773,6 +2779,9 @@ table {
           #sidebar nav a:after {
             background-image: none;
             background-color: #fcfcfc; } }
+  @media screen and (max-width: 480px) {
+    #sidebar nav ul li {
+      margin: 0 0 0 1em; } }
 
 /* Intro */
 #intro {
@@ -2787,7 +2796,10 @@ table {
     #intro {
       height: 100vh; }
       #intro h2 {
-        margin-top: 33px; } }
+        margin-top: 20px; } }
+  @media screen and (max-width: 480px) {
+    #intro h2 {
+      margin-top: 10%; } }
   #intro p {
     font-size: 1.25em;
     color: rgba(255, 255, 255, 0.8);
@@ -2828,11 +2840,33 @@ table {
     /* fixed header height*/
     margin: -25px 0 0;
     /* negative fixed header height */
-    visibility: hidden; } }
+    visibility: hidden; }
+  img#loader {
+    height: 45px !important; } }
+
+.img-txt-swap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .img-txt-swap h2 {
+    padding: 0 30px 0 0; }
+  .img-txt-swap img {
+    position: relative;
+    bottom: 8px; }
 
 @media only screen and (min-width: 1000px) {
   #three {
     height: 100vh; } }
+
+img#loader {
+  height: 65px; }
 
 #loaddiv {
   position: fixed;
@@ -2861,6 +2895,40 @@ table {
   left: 10px;
   bottom: 10px; }
 
+@media screen and (min-width: 1681px) {
+  .m-logo {
+    top: 4px; } }
+
+@media screen and (max-width: 1280px) {
+  .m-logo {
+    bottom: 15px; } }
+
+@media screen and (max-width: 980px) {
+  .m-logo {
+    bottom: 30px; } }
+
+@media screen and (max-width: 980px) {
+  .m-logo {
+    bottom: 15px; }
+  #one section:nth-of-type(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; } }
+
+@media screen and (max-width: 736px) {
+  .m-logo {
+    left: 8px; }
+    .m-logo img {
+      width: 80px; } }
+
+@media screen and (max-width: 360px) {
+  .m-logo {
+    bottom: 20px; } }
+
 .m-logo-case {
   position: relative;
   top: 9px;
@@ -2875,11 +2943,14 @@ table {
 #one p {
   color: #dcd0c0; }
 
-#two .inner h2 {
-  text-shadow: 1px 1px #262f31; }
-
 #three {
   background-color: #f4f4f4; }
+  #three .inner img {
+    position: relative;
+    bottom: 10px; }
+  #three .inner h2 {
+    float: left;
+    padding: 0 30px 0 0; }
   #three .inner form input, #three .inner form textarea {
     background-color: #8b8f92; }
   #three .inner p:last-child {

@@ -16,8 +16,14 @@
 		@include breakpoint('<=small'){
 			height: 100vh;
 			h2{
-				margin-top: 33px;
+				margin-top: 20px;
 				
+			}
+		}
+
+		@include breakpoint('<=xsmall'){
+			h2{
+				margin-top: 10%;
 			}
 		}
 		
@@ -44,6 +50,7 @@
 		}
 	}
 
+	
 	.nxt:hover{
 		
 		
