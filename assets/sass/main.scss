@@ -192,8 +192,47 @@ opacity: 0.8;
 
 
 
+.wrapFourohfour{
+    min-height: 58vh;
+    margin-bottom: -10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    a {
+      
+        text-decoration: underline;
+    }
+}
+
+.wrapFourohfour::after{
+    content: "";
+    display: block;
+    height: 282px;
+  }
+
+
+
 .case-shadow{
     text-shadow: 1px 1px 2px #962300;
+}
+
+a[href="https://unaffiliatedproductions.com/"] {
+    color: #46868c;
+    
+    &:hover{
+        text-decoration: underline;
+    text-decoration-color: #46868c;
+    }
+}
+
+a[href="https://www.daymakertouring.com/collections/store/products/alpine-touring-adapters"] {
+    color: #ff7a01;
+    &:hover{
+        text-decoration: underline;
+        text-decoration-color: #ff7a01;
+    }
+    
 }
 
 .hidden{

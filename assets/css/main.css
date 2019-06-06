@@ -2934,8 +2934,43 @@ img#loader {
   top: 9px;
   left: 6px; }
 
+.wrapFourohfour {
+  min-height: 58vh;
+  margin-bottom: -10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center; }
+  .wrapFourohfour a {
+    text-decoration: underline; }
+
+.wrapFourohfour::after {
+  content: "";
+  display: block;
+  height: 282px; }
+
 .case-shadow {
   text-shadow: 1px 1px 2px #962300; }
+
+a[href="https://unaffiliatedproductions.com/"] {
+  color: #46868c; }
+  a[href="https://unaffiliatedproductions.com/"]:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #46868c;
+    text-decoration-color: #46868c; }
+
+a[href="https://www.daymakertouring.com/collections/store/products/alpine-touring-adapters"] {
+  color: #ff7a01; }
+  a[href="https://www.daymakertouring.com/collections/store/products/alpine-touring-adapters"]:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #ff7a01;
+    text-decoration-color: #ff7a01; }
 
 .hidden {
   display: none; }
