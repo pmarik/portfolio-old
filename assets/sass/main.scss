@@ -4,7 +4,7 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints'; 
 @import 'libs/html-grid';
-@import 'font-awesome.min.css';
+@import 'font-awesome.min.css'; 
 
 
 // Breakpoints.
@@ -17,7 +17,7 @@
 		xsmall:   ( 361px,   480px  ),
 		xxsmall:  ( null,    360px  )
 	));
-
+ 
 // Base.
 
 	@import 'base/reset';
@@ -42,7 +42,8 @@
 	@import 'components/split';
 	@import 'components/spotlights';
 	@import 'components/table';
-	@import 'components/wrapper';
+    @import 'components/wrapper';
+    @import 'components/panel';
 
 // Layout.
 
@@ -98,7 +99,7 @@
 
 @media only screen and (min-width: 1000px){
 	#three{
-        height: 100vh;
+        //height: 100vh;
       
 	}
 	
@@ -163,8 +164,8 @@ opacity: 0.8;
     }
     #one{
         section:nth-of-type(2){
-            display: flex;
-            flex-direction: column-reverse;
+            //display: flex;
+            //flex-direction: column-reverse;
         }
     }
 }
@@ -364,3 +365,7 @@ a[href="https://www.daymakertouring.com/collections/store/products/alpine-tourin
     }
 }
 
+
+.tradeImgs{
+    display: flex;
+}

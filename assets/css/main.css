@@ -1999,7 +1999,6 @@ header h6 + p {
   line-height: 1.5em; }
 
 .sectionimg {
-  max-width: 40%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2281,7 +2280,9 @@ table {
         padding: 4em 4em 2em 4em ; } }
     @media screen and (max-width: 1280px) {
       .wrapper > .inner {
-        width: 100%; } }
+        width: 100%; }
+        .wrapper > .inner:last-child {
+          margin-top: 0px; } }
     @media screen and (max-width: 736px) {
       .wrapper > .inner {
         padding: 3em 2em 1em 2em ; } }
@@ -2382,6 +2383,51 @@ table {
   .wrapper.fade.inactive > .inner,
   body.is-preload .wrapper.fade > .inner {
     opacity: 0; }
+
+.project-panels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 80vh; }
+  .project-panels .panel {
+    background: #f4f4f4;
+    margin: 10px;
+    min-height: 100%;
+    min-width: 30%;
+    border-radius: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 280px;
+    flex: 0 1 280px; }
+    .project-panels .panel .panel-content {
+      height: 70%;
+      padding: 20px; }
+      .project-panels .panel .panel-content h3 {
+        text-align: center; }
+      .project-panels .panel .panel-content p {
+        color: #262F31 !important;
+        margin: 20px;
+        font-size: 0.9rem; }
+
+.panel-bottom {
+  height: 30%; }
+  .panel-bottom .tech-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px; }
+  .panel-bottom .panel-btn {
+    margin-top: 20px;
+    margin-left: 10%;
+    color: #262F31; }
 
 /* Header */
 #header {
@@ -2861,10 +2907,6 @@ table {
     position: relative;
     bottom: 8px; }
 
-@media only screen and (min-width: 1000px) {
-  #three {
-    height: 100vh; } }
-
 img#loader {
   height: 65px; }
 
@@ -2909,15 +2951,7 @@ img#loader {
 
 @media screen and (max-width: 980px) {
   .m-logo {
-    bottom: 15px; }
-  #one section:nth-of-type(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; } }
+    bottom: 15px; } }
 
 @media screen and (max-width: 736px) {
   .m-logo {
@@ -3046,3 +3080,8 @@ a[href="https://www.daymakertouring.com/collections/store/products/alpine-tourin
   background-color: #f4f4f4; }
   .case a {
     font-weight: bold; }
+
+.tradeImgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

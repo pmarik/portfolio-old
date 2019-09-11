@@ -11,17 +11,27 @@
 			
 			width: _size(inner-width);
 
+			&:last-child{
+				//margin-top: 50px;
+			}
+
 			@include breakpoint('<=xlarge') {
 				@include padding(4em, 4em);
+				
 			}
 
 			@include breakpoint('<=large') {
 				width: 100%;
+				&:last-child{
+					margin-top: 0px;
+				}
 			}
 
 			@include breakpoint('<=small') {
 				@include padding(3em, 2em);
 			}
+
+		
 		}
 
 		&.alt {
